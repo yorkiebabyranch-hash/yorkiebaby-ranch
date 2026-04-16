@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Puppies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .carousel {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .carousel-controls {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .carousel-controls button {
+            margin: 5px;
+            padding: 8px 12px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .carousel-controls button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Yorkie Baby Ranch</h1>
+    <p>Trusted Yorkie Breeder | Healthy & Adorable Puppies</p>
+</header>
+
+<nav>
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="puppies.html">Puppies</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="reviews.html">Reviews</a>
+    <a href="faq.html">FAQ</a>
+    <a href="contact.html">Contact</a>
+</nav>
+
+<section>
+    <h2>Available Puppies</h2>
+    <div class="puppy-card">
+        <div class="carousel" id="carousel-prince">
+            <img src="c:\Users\Monju Nelson\Pictures\IMG_5602.JPG " alt="Yorkie Puppy" class="active">
+            <img src="c:\Users\Monju Nelson\Pictures\IMG_5603.JPG " alt="yorkie puppy">
+            <img src="c:\Users\Monju Nelson\Pictures\IMG_5604.JPG " alt="yorkie puppy">
+            <img src="c:\Users\Monju Nelson\Pictures\IMG_5601.JPG " alt="yorkie puppy">
+        </div>
+        <div class="carousel-controls">
+            <button onclick="previousImage('carousel-prince')">❮ Prev</button>
+            <button onclick="nextImage('carousel-prince')">Next ❯</button>
+        </div>
+        <h3>Prince</h3>
+        <p>Male • 10 weeks • Black & Tan</p>
+        <a href="https://www.facebook.com/profile.php?id=61583773478694" target="_blank">
+            <button><i class="fab fa-facebook"></i> View on Facebook</button>
+        </a>
+    </div>
+    <div class="puppy-card">
+        <img src="https://place-puppy.com/301x200" alt="Yorkie Puppy">
+        <h3>Luna</h3>
+        <p>Female • 9 weeks • Chocolate</p>
+        <a href="https://www.facebook.com/profile.php?id=61583773478694" target="_blank">
+            <button><i class="fab fa-facebook"></i> View on Facebook</button>
+        </a>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Yorkie Baby Ranch | Follow us on Facebook</p>
+</footer>
+
+<script>
+    function nextImage(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        const images = carousel.querySelectorAll('img');
+        let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+    
+    function previousImage(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        const images = carousel.querySelectorAll('img');
+        let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+</script>
+</body>
+</html>
