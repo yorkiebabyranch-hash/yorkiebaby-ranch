@@ -9,7 +9,8 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg, #2c3e50, #34495e);
+    background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+        url("https://z-p3-scontent.fnsi1-2.fna.fbcdn.net/v/t39.30808-6/670873869_122136327033125782_8409256288615833771_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeGzeCw_xVD_iV5mPrfv8ziNXOa62YN59mRc5rrZg3n2ZF6ga6qUtUmJgpWzisYHIt_cWrewuO-vFlu_Sgz49789&_nc_ohc=8mwG4J5mkR8Q7kNvwEglhsh&_nc_oc=AdoZ19sQRMNyq1qW8z3UqIRR4RxNQGg51HWqbLZ0p6u7XhHrFl3GPQxlN7AWBwWVc7c&_nc_zt=23&_nc_ht=z-p3-scontent.fnsi1-2.fna&_nc_gid=QmKd2Ry_24vQEkZ3Y8nY7A&_nc_ss=7a3a8&oh=00_Af3OB4G9SwE7bScErHImPdX5QJgXYyYeOGUoJPzzsZlWYg&oe=69E7460D") center/cover no-repeat;
     color: white;
     text-align: center;
     padding: 30px;
