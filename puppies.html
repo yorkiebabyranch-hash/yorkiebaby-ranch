@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Puppies</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .carousel {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+        }
+        .carousel img {
+            width: 100%;
+            display: none;
+        }
+        .carousel img.active {
+            display: block;
+        }
+        .carousel-controls {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .carousel-controls button {
+            margin: 5px;
+            padding: 8px 12px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .carousel-controls button:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Yorkie Baby Ranch</h1>
+    <p>Trusted Yorkie Breeder | Healthy & Adorable Puppies</p>
+</header>
+
+<nav>
+    <div class="nav-container">
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="puppies.html">Puppies</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="reviews.html">Reviews</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+    </div>
+</nav>
+
+<section>
+    <h2>Available Puppies</h2>
+    <div class="puppy-card">
+        <div class="carousel" id="carousel-prince">
+            <img src="images/prince.jpg" alt="Prince" class="active">
+        <div class="carousel-controls">
+            <button onclick="previousImage('carousel-prince')">❮ Prev</button>
+            <button onclick="nextImage('carousel-prince')">Next ❯</button>
+        </div>
+        <h3>Prince</h3>
+        <p>Male • 10 weeks • Black & Tan</p>
+        <div class="puppy-actions">
+            <a href="images/prince.jpg" target="_blank" class="btn btn-secondary">
+                <i class="fas fa-image"></i> View Prince Pictures
+            </a>
+        </div>
+    </div>
+    <div class="puppy-card">
+            <div class="carousel" id="carousel-Luna">
+                <img src="https://place-puppy.com/301x200" alt="Luna" class="active">
+        <div class="carousel-controls">
+            <button onclick="previousImage('carousel-Luna')">❮ Prev</button>
+            <button onclick="nextImage('carousel-Luna')">Next ❯</button>
+            </div>
+            </div>
+        <h3>Luna</h3>
+        <p>Female • 9 weeks • Chocolate</p>
+        <a href="https://www.facebook.com/profile.php?id=61583773478694" target="_blank">
+            <i class="fas fa-image"></i> View Luna Picture
+        </a>
+    </div>
+    <div class="puppy-card">
+        <div class="carousel" id="carousel-buddy">
+            <img src="images/IMG_5613.JPG" alt="Buddy" class="active">
+            <img src="images/IMG_5753.JPG" alt="Buddy">
+            <img src="images/IMG_5773.JPG" alt="Buddy">
+        </div>
+        <div class="carousel-controls">
+            <button onclick="previousImage('carousel-buddy')">❮ Prev</button>
+            <button onclick="nextImage('carousel-buddy')">Next ❯</button>
+        </div>
+        <h3>Buddy</h3>
+        <p>Male • 8 weeks • Black & Tan</p>
+        <p style="color: #666; font-size: 14px;">Sweet, playful, and full of personality! Perfect family companion.</p>
+        <div class="puppy-actions">
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-heart"></i> Inquire About Buddy
+            </a>
+        </div>
+    </div>
+    <div class="puppy-card">
+        <div class="carousel" id="carousel-daisy">
+            <img src="images/IMG_5839.JPG" alt="Daisy" class="active">
+            <img src="images/IMG_5929.JPG" alt="Daisy">
+            <img src="images/IMG_6182.JPG" alt="Daisy">
+        </div>
+        <div class="carousel-controls">
+            <button onclick="previousImage('carousel-daisy')">❮ Prev</button>
+            <button onclick="nextImage('carousel-daisy')">Next ❯</button>
+        </div>
+        <h3>Daisy</h3>
+        <p>Female • 7 weeks • Black & Tan</p>
+        <p style="color: #666; font-size: 14px;">Adorable and energetic! Loves to play and cuddle with her family.</p>
+        <div class="puppy-actions">
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-heart"></i> Inquire About Daisy
+            </a>
+        </div>
+    </div>
+    <div class="puppy-card">
+        <div class="carousel" id="carousel-bella">
+            <img src="images/IMG_6098.JPG" alt="Bella" class="active">
+            <img src="images/IMG_6124.JPG" alt="Bella">
+            <img src="images/IMG_6125.JPG" alt="Bella">
+        </div>
+        <div class="carousel-controls">
+            <button onclick="previousImage('carousel-bella')">❮ Prev</button>
+            <button onclick="nextImage('carousel-bella')">Next ❯</button>
+        </div>
+        <h3>Bella</h3>
+        <p>Female • 7 weeks • Soft Black & Tan</p>
+        <p style="color: #666; font-size: 14px;">Gentle and sweet, Bella is a lovely little friend who enjoys cuddles and playtime.</p>
+        <div class="puppy-actions">
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-heart"></i> Inquire About Bella
+            </a>
+        </div>
+    </div>
+    <div class="puppy-card">
+        <div class="carousel" id="carousel-charlie">
+            <img src="images/IMG_6127.JPG" alt="Charlie" class="active">
+            <img src="images/IMG_6130-1.JPG" alt="Charlie">
+            <img src="images/IMG_6131.JPG" alt="Charlie">
+        </div>
+        <div class="carousel-controls">
+            <button onclick="previousImage('carousel-charlie')">❮ Prev</button>
+            <button onclick="nextImage('carousel-charlie')">Next ❯</button>
+        </div>
+        <h3>Charlie</h3>
+        <p>Male • 8 weeks • Charming Black & Tan</p>
+        <p style="color: #666; font-size: 14px;">Curious and playful, Charlie loves to explore and makes a great little companion.</p>
+        <div class="puppy-actions">
+            <a href="#contact" class="btn btn-primary">
+                <i class="fas fa-heart"></i> Inquire About Charlie
+            </a>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <p>© 2026 Yorkie Baby Ranch | Follow us on Facebook</p>
+</footer>
+
+<script>
+    function nextImage(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        const images = carousel.querySelectorAll('img');
+        let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex + 1) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+    
+    function previousImage(carouselId) {
+        const carousel = document.getElementById(carouselId);
+        const images = carousel.querySelectorAll('img');
+        let currentIndex = Array.from(images).findIndex(img => img.classList.contains('active'));
+        images[currentIndex].classList.remove('active');
+        currentIndex = (currentIndex - 1 + images.length) % images.length;
+        images[currentIndex].classList.add('active');
+    }
+</script>
+</body>
+</html>
