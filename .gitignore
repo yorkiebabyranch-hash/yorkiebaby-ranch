@@ -1,0 +1,17 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Trash/temp files
+.trash*/
+*/.trashed-*
+*.tmp
+
+# IDE files
+.idea/
+.vscode/settings.json
+.vscode/launch.json
+
+# Local env files
+.env
+.env.local
